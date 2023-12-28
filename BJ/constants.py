@@ -1,6 +1,6 @@
 import pygame
 
-display_width = 900
+display_width = 1400
 display_height = 700
 
 background_color = (34,139,34)
@@ -14,7 +14,7 @@ dark_red = (255, 0, 0)
 pygame.init()
 font = pygame.font.SysFont("Arial", 20)
 textfont = pygame.font.SysFont('Comic Sans MS', 35)
-game_end = pygame.font.SysFont('dejavusans', 100)
+game_end = pygame.font.SysFont('dejavusans', 70)
 blackjack = pygame.font.SysFont('roboto', 70)
 
 

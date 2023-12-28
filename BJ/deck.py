@@ -58,7 +58,14 @@ class Hand(Deck):
 
     #Display cards in the hand
     def display_cards(self):
+        self.card_img = []
         for card in self.cards:
             cards = "".join((card[0], card[1]))
-            if cards not in self.card_img:
-                self.card_img.append(cards)
+            self.card_img.append(cards)
+
+    #Determine if the hand can be split
+    def can_split(self):
+        if self.cards[0][0] == self.cards[1][0]:
+            return True
+        else:
+            return False
